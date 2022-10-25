@@ -69,6 +69,9 @@ function App() {
       }),
     });
     const createdGuest = await response.json();
+    if (createdGuest) {
+      console.log(createdGuest);
+    }
   } // END of Creates New Guest
 
   // Delete Specific Guest
@@ -96,7 +99,7 @@ function App() {
       setLoading(false);
     }
     getAllGuests().catch((error) => {
-      // console.error('Error:', error);
+      console.error('Error:', error);
     });
   }, [lastName, remove]);
 
