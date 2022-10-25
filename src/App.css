@@ -1,14 +1,196 @@
-.App {
-  text-align: center;
+/* CSS Ruleset Template: */
+
+/* pos */
+
+/* box */
+
+/* aes */
+
+/* Universal Building Blocks */
+
+.rowWrapper {
+  display: flex;
+  flex-direction: row;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.colWrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.hrSolid {
+  width: 100%;
+  border-top: 2px solid #ddd;
+  margin: 1em 0px 1em 0px;
+}
+
+.bgWhite {
+  background: rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.radBorderStyle {
+  border-radius: 8px;
+}
+
+.paddingStyle {
+  padding: 10px 10px;
+}
+
+.textWhite {
+  color: white;
+}
+
+.textStyle {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+/* --------------- */
+/* App.js Specific */
+
+.pageMargin {
+  margin: 24px;
+  margin-top: 120px;
+}
+
+.pageContentWrapper {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1080px;
+}
+
+.pageCard {
+  background-color: #3c6997;
+}
+
+/* --------------- */
+/* Controls (Top) Section */
+
+.titleWrapperControls {
+  /* pos */
+  display: flex;
+  position: relative;
+  margin: auto 0;
+
+  /* box */
+  justify-content: left;
+  padding: 24px;
+
+  /* aes */
+  color: #3c6997;
+  background-color: white;
+  font-size: 36px;
+}
+
+.contentWrapperControls {
+  background-color: #41579a;
+  padding: 24px;
+  color: white;
+}
+
+.inputFieldWrapper {
+  position: relative;
+  display: flex;
+  width: 50%;
+  margin-bottom: 0.5em;
+}
+
+.inputFieldWrapper label {
+  position: relative;
+  left: 5%;
+  text-align: left;
+}
+
+.inputFieldWrapper label input {
+  /* pos */
+  position: relative;
+  left: -5%;
+
+  /* aes-box */
+  padding: 10px 10px;
+  width: 100%;
+  height: 2em;
+  border-style: none;
+  border: 2px solid #3c6997;
+
+  /* aes-content */
+  font-size: 20px;
+  color: #333;
+}
+
+.inputPreview {
+  height: 2em;
+}
+
+.addGuest {
+  width: 100%;
+  background-color: #4caf50;
+}
+
+.addGuest:hover,
+.addGuest:focus {
+  background-color: hsl(122, 39%, 69%);
+  color: #333;
+}
+
+.addGuest:active {
+  transition: 0.05ms;
+  background-color: hsl(122, 39%, 39%);
+  color: white;
+}
+
+.addGuest {
+  width: 100%;
+  background-color: #4caf50;
+}
+
+.addGuest:hover,
+.addGuest:focus {
+  background-color: hsl(122, 39%, 69%);
+  color: #333;
+}
+
+.addGuest:active {
+  transition: 0.05ms;
+  background-color: hsl(122, 39%, 39%);
+  color: white;
+}
+
+.deleteGuest {
+  width: 100%;
+  background-color: #ac4949;
+}
+
+.deleteGuest:hover,
+.deleteGuest:focus {
+  background-color: hsl(0, 40%, 58%);
+  color: #333;
+}
+
+.deleteGuest:active {
+  transition: 0.05ms;
+  background-color: hsl(0, 40%, 38%);
+  color: white;
+}
+
+/* --------------- */
+/* List (Bottom) Section */
+
+.titleWrapperGuests {
+  background-color: white;
+  padding: 24px;
+}
+
+.titleWrapperGuests h3 {
+  color: #3c6997;
+  font-size: 24px;
+  margin: auto 0;
+}
+
+.contentWrapperGuests {
+  background-color: #41579a;
+  padding: 24px;
   color: white;
 }

@@ -1,13 +1,41 @@
-body {
-  margin: 0;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  transition: ease-in-out 0.3;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 200vh;
+  background-image: linear-gradient(
+    53deg,
+    #018d92,
+    #007a66,
+    #470058,
+    #007a47,
+    #018d92
+  );
+  background-size: 500% 500%;
+
+  animation: AnimationName 13s ease-in-out infinite;
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 45%;
+  }
+  50% {
+    background-position: 100% 56%;
+  }
+  100% {
+    background-position: 0% 45%;
+  }
 }
